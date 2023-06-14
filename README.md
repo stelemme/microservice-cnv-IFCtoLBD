@@ -5,7 +5,7 @@ To install this Microservice, make sure Node.js 19 or higher is installed on you
 ```
 npm install
 ```
-Add to the root of the Microservice two new folders: "base-files" and "cli". Add to the cli folder the [IFCtoLBD_CLI.jar](https://github.com/jyrkioraskari/IFCtoLBD/releases) developed by Oraskari et al. (2023).
+Add to the root of the Microservice two new folders: "base-files" and "cli", then add to the cli folder the [IFCtoLBD_CLI.jar](https://github.com/jyrkioraskari/IFCtoLBD/releases) developed by Oraskari et al. (2023).
 ## Running the Microservice
 The Microservice can be run normally or in development mode respectively with the following commands.
 ```
