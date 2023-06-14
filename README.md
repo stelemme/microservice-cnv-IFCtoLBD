@@ -1,16 +1,15 @@
 # IFC-to-LBD Conversion Microservice
 The conversion from IFC to LBD is done by using the IFC-to-LBD converter provided by Oraskari et al. (2023)
 ## Installation
-
-
+To install this Microservice, make sure Node.js 19 or higher is installed on your device. Installing the Microservice can be done by running the following command. The command makes sure all the dependencies present in the [package.json](https://github.com/stelemme/microservice-conv-ifc-to-lbd/blob/main/package.json) file are correctly installed.
+```
+npm install
+```
 ## Running the Microservice
-To run the Microservice, a virtual environment needs to be activated using the following command.
+The Microservice can be run normally or in development mode respectively with the following commands.
 ```
-.venv\Scripts\activate
-```
-After the virtual environment is activated the Microservice can be run using the following command. Additional arguments can be added to the command to for example run the Microservice in debug mode (--debug), which enables live reloading. The port on which the Microservice runs can also be changed with an additional argument (--port <port-number>).
-```
-flask --app flaskr run
+npm run start
+npm run start:dev
 ```
 ## Using the Microservice
 The functionality of this Microservice can be acces via the following endpoint.
