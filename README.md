@@ -1,10 +1,11 @@
 # IFC-to-LBD Conversion Microservice
-The conversion from IFC to LBD is done by using the IFC-to-LBD converter provided by Oraskari et al. (2023)
+The conversion from IFC to LBD is done by using the IFC-to-LBD converter provided by Oraskari et al. (2023).
 ## Installation
 To install this Microservice, make sure Node.js 19 or higher is installed on your device. Installing the Microservice can be done by running the following command. The command makes sure all the dependencies present in the [package.json](https://github.com/stelemme/microservice-conv-ifc-to-lbd/blob/main/package.json) file are correctly installed.
 ```
 npm install
 ```
+Add to the root of the Microservice two new folders: "base-files" and "cli". Add to the cli folder the [IFCtoLBD_CLI.jar](https://github.com/jyrkioraskari/IFCtoLBD/releases) developed by Oraskari et al. (2023).
 ## Running the Microservice
 The Microservice can be run normally or in development mode respectively with the following commands.
 ```
