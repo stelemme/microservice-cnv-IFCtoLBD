@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microservice Template</title>
+  <title>IFC-to-LBD Converter Microservice</title>
+  <script>
+    function redirectQto() {
+      var currentURL = window.location.href;
+      var newURL = currentURL + "conv/ifc-to-lbd";
+      window.location.href = newURL;
+    }
+  </script>
 </head>
+
 <body>
-  <h2>Microservice Template for Node.js</h2>
-  <p>This web service provides the user with a practical template to start building your own Microservice.</p>
-  <p>Acces the "<a href="http://localhost:3002/cnv">cnv</a>" type, which represents the operation performed by the web service.</p>
+  <h2>IFC-to-LBD Converter Microservice</h2>
+  <p>The IFC-to-LBD Converter Microservice uses the same structure as the <a
+      href="https://github.com/stelemme/template-microservice-js">Express
+      template</a>. Two folders are added to the root of the Microservice. The first folder is the base-files directory
+    which temporarily houses the IFC and LBD-file
+    during conversion. After the conversion is done, all files are deleted from this folder. The second folder is the
+    cli folder. CLI stands for Command Line Interface. This folder houses the Java ARchive (JAR) file provided by
+    Oraskari (2023) which performs the actual conversion from IFC to LBD. In the ifcToLbd.js file, two controller
+    functions are present which handle the GET and POST response of the following endpoint.</p>
+  <p><a href="javascript:void(0);" onclick="redirectQto();">
+      <script>document.write(window.location.href)</script>conv/ifc-to-lbd
+    </a></p>
+  <p>The GET response of the endpoint returns a JSON object that specifies which methods and data types are supported by
+    the endpoint. This endpoint must receive an IFC-file. The POST response then returns the converted LBD-file, in the
+    turtle format, if the IFC-file is correctly sent in the body of the request. The process can be tested using Postman
+    or a Controller Microservice.</p>
 </body>
+
 </html>
