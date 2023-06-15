@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // The port on which the Microservice runs
-const PORT = 3000;
+const PORT = 3000
 
 app.use(bodyParser.raw({ type: 'application/octet-stream', limit: '50mb' }));
 
