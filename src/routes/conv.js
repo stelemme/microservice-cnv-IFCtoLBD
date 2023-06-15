@@ -7,7 +7,7 @@ const {
   IfcToLbdPOST,
 } = require("../controllers/ifcToLbd");
 
-// Assigning controllers to the "/op/IFCtoGLTF" URI
+// Assigning controllers to the "/conv/ifc-to-lbd" URI
 router.get("/ifc-to-lbd", IfcToLbdGET);
 router.post("/ifc-to-lbd", IfcToLbdPOST);
 

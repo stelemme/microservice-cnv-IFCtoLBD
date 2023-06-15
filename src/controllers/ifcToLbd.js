@@ -71,7 +71,7 @@ const switcher = (originalUrl, base) => {
   let command, fileExtension;
   switch (originalUrl) {
     case "IFCtoLBD":
-      command = `java -jar ${process.cwd()}/cli/IFCtoLBD.jar ${process.cwd()}/${base} --target_file ${process.cwd()}/${base}.lbd.ttl`;
+      command = `java -jar ${process.cwd()}/cli/IFCtoLBD_CLI.jar ${process.cwd()}/${base} --target_file ${process.cwd()}/${base}.lbd.ttl`;
       fileExtension = "lbd.ttl";
       break;
     default:

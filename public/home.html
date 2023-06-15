@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IFC-to-LBD Converter Microservice</title>
   <script>
-    function redirectQto() {
+    function redirectIfctoLbd() {
       var currentURL = window.location.href;
       var newURL = currentURL + "conv/ifc-to-lbd";
       window.location.href = newURL;
@@ -25,7 +25,7 @@
     cli folder. CLI stands for Command Line Interface. This folder houses the Java ARchive (JAR) file provided by
     Oraskari (2023) which performs the actual conversion from IFC to LBD. In the ifcToLbd.js file, two controller
     functions are present which handle the GET and POST response of the following endpoint.</p>
-  <p><a href="javascript:void(0);" onclick="redirectQto();">
+  <p><a href="javascript:void(0);" onclick="redirectIfctoLbd();">
       <script>document.write(window.location.href)</script>conv/ifc-to-lbd
     </a></p>
   <p>The GET response of the endpoint returns a JSON object that specifies which methods and data types are supported by
