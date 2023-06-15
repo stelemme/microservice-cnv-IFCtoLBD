@@ -15,6 +15,6 @@ npm run start:dev
 ## Using the Microservice
 The functionality of this Microservice can be acces via the following endpoint.
   
-[http://localhost:3000/conv/ifc-to-lbd](http://localhost:5000/op/qto)
+[http://localhost:3000/conv/ifc-to-lbd](http://localhost:3000/conv/ifc-to-lbd)
   
 This endpoint has a GET and POST method. The GET response of the endpoint returns a JSON object that specifies which methods and data types are supported by the endpoint. This endpoint must receive an IFC-file. The POST response then returns the converted LBD-file, in the turtle format, if the IFC-file is correctly sent in the body of the request. The process can be tested using Postman or a Controller Microservice.
