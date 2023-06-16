@@ -6,7 +6,7 @@ const app = express();
 // The port on which the Microservice runs
 const PORT = 3000
 
-app.use(bodyParser.raw({ type: 'application/octet-stream', limit: '50mb' }));
+app.use(bodyParser.raw({ type: 'application/ifc', limit: '50mb' }));
 
 // Assigning the routes to the "/" URI
 const homeRouter = require("./routes/home");
