@@ -12,7 +12,7 @@ app.use(bodyParser.raw({ type: 'application/octet-stream', limit: '50mb' }));
 const homeRouter = require("./routes/home");
 app.use("/", homeRouter);
 
-// Assigning the routes to the "/cnv" URI
+// Assigning the routes to the "/conv" URI
 const convRouter = require("./routes/conv");
 app.use("/conv", convRouter);
 
